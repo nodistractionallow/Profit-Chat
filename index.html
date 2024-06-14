@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-341779052"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-341779052');
+  </script>
+  <!-- Event snippet for conversion tracking -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-341779052/gZM6CLD2hLoZEOzE_KIB',
+          'value': 0.01,
+          'currency': 'PKR',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profit Chat</title>
@@ -72,7 +99,7 @@
       </h1>
     </div>
     <div class="content">
-<a href="Profit Chat.apk" download>
+      <a href="Profit Chat.apk" download onclick="gtag_report_conversion('Profit Chat.apk'); return false;">
         <img src="https://cdnflags.dream11.com/d11-static-pages/images/d11_playstore.webp" alt="Download our Android App">
       </a>
       <p>Welcome to Profit Chat, the innovative chat app where you can connect with others and earn money at the same time!</p>
@@ -97,13 +124,14 @@
         <li>Enjoy a safe and secure chat environment.</li>
       </ul>
       <p>Ready to start profiting from your conversations? Download Profit Chat now!</p>
-      <a href="Profit Chat.apk" download>
+      <a href="Profit Chat.apk" download onclick="gtag_report_conversion('Profit Chat.apk'); return false;">
         <img src="https://cdnflags.dream11.com/d11-static-pages/images/d11_playstore.webp" alt="Download our Android App">
       </a>
     </div>
   </div>
 </body>
 </html>
+
 
 
 
